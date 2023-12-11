@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react'
 
-import planeScene from '../assets/3d/plane.glb';
+import planeScene from '../assets/3d/plane1.glb';
 import { useAnimations, useGLTF } from '@react-three/drei';
 
 const Plane = ({ isRotating, ...props}) => {
@@ -17,7 +17,7 @@ const Plane = ({ isRotating, ...props}) => {
     }, [actions, isRotating])
 
   return (
-    <mesh {...props} ref={ref}>
+    <mesh {...props} scale={0.15} ref={ref}>
         <primitive object={scene} />
     </mesh>
   )

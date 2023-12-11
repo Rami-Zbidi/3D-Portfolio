@@ -5,7 +5,7 @@ import "./index.css";
 
 const App = () => {
   return (
-    <main className='bg-slate-300/20'>
+    <main className='bg-slate-300/20 h-full'>
         <Router>
             <Routes>
                 <Route path="/" element={<Home />} />
